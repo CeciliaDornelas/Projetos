@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.clear{clear: both;}
+nav{
+    background-color: rgba(250, 244, 244, 0.966);
+}
+.imgbolo{
+    margin-left: 70%;/*50*/
+}
+.conteiner>nav>a>img{
+    margin-bottom: 10px;
+    margin-left: 42% ;
+}
+/*header*/
+body{
+    background-image: url(../imagens/doce.jpg);
+    background-size: cover;
+}
+form{
+    background-color: palevioletred;
+    border-radius: 20px;
+    width: 70%;
+    padding: 20px;
+    max-width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,50%);
+    top: 40px;
+}
+form>p{
+    color: purple;
+}
+form>p>input{
+    border: 1px solid purple;
+    border-radius: 10px;
+}
+form>p input[type=text],form input[type=email],form input[type=password]{
+    width: 100%;
+    height: 45px;
+    margin: 10px 0;
+    background-color: whitesmoke;
+}
+form input[type=submit]{
+    background-color: pink;
+    color: purple;
+    border: 1px solid purple;
+    border-radius: 10px;
+    width: 30%;
+    height: 30px;
+    cursor: pointer;
+    margin: 0 32%;
+}
+form input[type=submit]:hover{
+    background-color: violet;
+    color: white;
+}
+/*section*/
+@media screen and (max-width:700px){
+    .imgbolo{
+        margin-left: 10%;/*50*/
+    }
+    .conteiner>nav>a>img{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 23% ;
+    }
+    /*header*/
+    form{
+        top: 40px;
+    }
+    form input[type=submit]{
+        margin-left:35%;
+        margin-bottom: 10px;
+    }
+    /*section*/   
+}

@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+.clear{clear: both;}
+/*limpar float*/
+nav{
+    background-color: rgba(250, 244, 244, 0.966);
+}
+.menu{
+    float: right;
+    padding: 30px;
+    
+}
+.menu>ul>li{
+    padding: 0 10px;
+    display: inline-block;
+    border-bottom: 2px solid palevioletred;
+}
+.menu>ul>li>a{
+    text-decoration: none;
+    color: purple;
+}
+#selected{
+    font-weight: bold;
+}
+#bt{
+    display: none;
+}
+label[for='bt']{
+    padding:5px;
+    background-color: palevioletred;
+    color:purple;
+    text-align:center;
+    font-size:30px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    display: none;
+}	
+label[for='bt']:hover{
+    background-color:pink;
+}
+/*header*/
+.titulo{
+    background-color:pink;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid purple ;
+    border-bottom: 2px solid purple ;
+}
+.titulo>h1{
+    text-align: center;
+    color: purple;
+}
+.fts{
+    background-image: url(../imagens/capa\ fundo\ 4.jpg);
+    background-size: cover;
+}
+.fts>img{
+    padding-top: 10px ;
+    padding-left: 250px;
+    padding-bottom: 10px;
+}
+
+/*section*/
+.info{
+    float: left;
+    padding: 0 20%;
+    color: purple;
+}
+.info2>a{
+    display: block;
+    margin: 0 0 0 50%;
+}
+.info2>a{
+    text-decoration: none;
+    color: purple;
+}
+.fundofooter{
+    background-color: palevioletred;
+    height: 100px;
+}
+/*foolter*/
+@media screen and (max-width:800px){
+    nav{
+        padding-bottom: 2px ;
+    }
+    .imagi{
+        display: block;
+        margin-left: 25% ;
+    }
+    .conteiner>nav>a>img{
+        margin-bottom: 30px;
+        margin-left: 23% ;
+    }
+    label[for='bt']{
+        display:block;
+    }
+    .menu>ul{
+        margin-left: 50px;
+    }
+    .menu{
+        display: none;
+        margin-top:5px;
+        background-color: palevioletred;
+    }
+    .menu>ul>li{
+        width:100%;
+        border:0;
+        margin-top: 10px;
+        margin-left: 60px;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .menu ul ul{
+        position:static;
+        overflow:hidden;
+        max-height:0;
+        transition:all .4s;
+    }
+    .menu>ul>li>a:hover{
+        color: white;
+    }
+    #bt:checked ~ .menu{
+        margin-right:0;
+        display: block;
+    }
+    /*header*/
+    .fts>img{
+        padding-left: 80px;
+    }
+    /*section*/
+    .info{
+        float: none;
+        display: inline;
+    }
+    .info2>a{
+        margin: 0;
+    }  
+    .fundofooter{
+        height: 150px;
+    }
+    /*footer*/
+}

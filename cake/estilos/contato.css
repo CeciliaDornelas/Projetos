@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+.clear{clear: both;}
+.conteiner{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0.2%;
+}
+.imagi{
+    display: inline;
+}
+.menu{
+    float: right;
+    margin-top: 45px;
+}
+.menu>ul>li{
+    display: inline;
+    padding: 2px;
+    border-bottom: 2px solid palevioletred;
+}
+.menu>ul>li>a{
+    text-decoration: none;
+    color: purple; 
+    
+}
+div>ul>li>a:hover{ text-decoration: underline;}
+#selected{
+    font-weight: bold;
+}
+nav{
+    background-color: rgba(250, 244, 244, 0.966);
+    padding-bottom: 20px;
+}
+#bt{
+    display: none;
+}
+label[for='bt']{
+    padding:5px;
+    background-color: palevioletred;
+    color:purple;
+    text-align:center;
+    font-size:30px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    display: none;
+}	
+label[for='bt']:hover{
+    background-color:pink;
+}
+/*header*/
+.fundo{
+    background-image:url(../imagens/capa\ fundo\ 3.jpg);
+    background-size: contain;
+    padding-top: 30px;
+}
+div > h1{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: purple;
+    border-bottom: 2px solid palevioletred;
+}
+.w50{
+    float: left;
+    width: 50%;
+    padding:0 10px ;
+}
+.w100{
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+}
+.form-group > label{
+    display: block;
+    margin-bottom: 8px;
+    color: purple;
+}
+.form-group > input{
+    border: 1px solid black;
+    height: 30px;
+    width: 300px;
+    
+}
+#submit{
+    border:0;
+    margin-top: 20px;
+    background-color: palevioletred;
+    color:white;
+    width: 95px;
+    height: 28px;
+    cursor: pointer;
+    margin: 20px ;
+}
+#tamanho{
+    border: 1px solid black;
+    height: 100px;
+    width: 300px;
+}
+/*section*/
+.info{
+    float: left;
+    padding: 0 20%;
+    color: purple;
+}
+.info2>a{
+    display: block;
+    margin: 0 0 0 50%;
+}
+.info2>a{
+    text-decoration: none;
+    color: purple;
+}
+.fundofooter{
+    background-color: palevioletred;
+    height: 100px;
+}
+/*foolter*/
+@media screen and (max-width:800px){
+    .imagi{
+        display: block;
+        margin-left: 25% ;
+    }
+    .conteiner>nav>a>img{
+        margin-bottom: 30px;
+        margin-left: 23% ;
+    }
+    label[for='bt']{
+        display:block;
+    }
+    .menu>ul{
+        margin-left: 10px;
+    }
+    .menu{
+        display: none;
+        margin-top:20px;
+        padding-bottom: 10%;
+        background-color: palevioletred;
+    }
+    .menu>ul>li{
+        width:100%;
+        border:0;
+        margin-left: 30%;
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .menu ul ul{
+        position:static;
+        overflow:hidden;
+        max-height:0;
+        transition:all .4s;
+    }
+    .menu>ul>li>a:hover{
+        color: white;
+    }
+    #bt:checked ~ .menu{
+        margin-right:0;
+        display: block;
+    }
+    /*header*/
+    .w50{width: 100%;}
+    /*section*/
+    .fundofooter{
+        height: 200%;/*200*/
+    }
+    .info{
+        float: none;
+        display: inline;
+    }
+    .info2>a{
+        margin: 0;
+    }
+    /*footer*/
+}
