@@ -49,7 +49,7 @@ section .conteiner .tela .form{
     position: relative;
     width: 50%;
     height: 100%;
-    background-color: rgb(112, 243, 112);
+    background-color: rgb(99, 230, 99);;
     display: flex;
     align-items: center;
     padding: 40px;
@@ -97,3 +97,20 @@ section .conteiner .tela .form form .inscrever a{
     color: green;
 }
 
+@media screen and (max-width:800px){
+    section .conteiner .tela{
+        right: 13%;
+        left: auto;
+    }
+
+    section .conteiner .tela .imagem img{
+        position: fixed;
+    }
+
+    section .conteiner .tela .form{
+        padding: 10px;
+        width: 500px;
+        height: 400px;
+    }
+
+}
