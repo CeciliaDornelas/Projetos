@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    background-color: rgb(66, 241, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section .conteiner{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+section .conteiner .tela{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+section .conteiner .tela .imagem{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+section .conteiner .tela .imagem img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .conteiner .tela .form{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(112, 243, 112);
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+}
+
+section .conteiner .tela .form h2{
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(37, 44, 37);
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+section .conteiner .tela .form  form input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+}
+section .conteiner .tela .form form input[type = "submit"]{
+    width: 50%;
+    background-color: green;
+    color: rgb(214, 214, 214);
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-bottom: 30px;
+
+}
+
+section .conteiner .tela .form form .inscrever{
+    position: relative;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+section .conteiner .tela .form form .inscrever a{
+    text-decoration: none;
+    color: green;
+}
+
