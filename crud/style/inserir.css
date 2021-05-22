@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+body{
+    background-image: url(../img/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body .tela{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+}
+body .tela h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+body .tela p{
+    font-size: 20px;
+}
+body .tela input{
+    border: none;
+    border-bottom: 2px solid rgb(51, 50, 50);
+    width: 400px;
+    text-decoration: none;
+    padding-bottom: 3px;
+    background-color: rgb(245, 243, 240);
+}
+body .tela #butao{
+    padding-top: 12px;
+    text-align: center;
+}
+body .tela #butao input[type="submit"]{
+    border: none;
+    width: 200px;
+    color: white;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    background-color: purple;
+}

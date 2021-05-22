@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/inserir.css">
+    <title>Adicionar a Tabela</title>
+</head>
+<body>
+ 
+    <form action="adicionar_user.php" method="POST" class="tela">
+        <h1>Cadastro: </h1>
+        <p>Nome:<span style="color: red;">*</span></p>
+        <input type="text" name="nome" required>
+        <br>
+        <p>Email:<span style="color: red;">*</span></p>
+        <input type="email" name="email" required>
+        <br>
+        <p>Telefone:<span style="color: red;">*</span></p>
+        <input type="text" name="tel" required>
+        <br>
+        <div id="butao">
+            <input type="submit" value="cadastrar">
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+.clear{clear: both;}
+body{
+    background-image: url(../img/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body .telinha{
+    position: absolute;
+    left: 30%;
+    top: 15%;
+}
+body .telinha h1{
+    margin-bottom: 20px;
+}
+body .telinha #butao button{
+    float: right;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+    text-decoration: none;
+
+}
+body .telinha #butao button:active{
+    background-color: rgb(173, 4, 173);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+body .telinha #butao button a{
+    text-decoration: none;
+    color: white;
+}
+body .telinha .tabela th{
+    text-align: center;
+    padding-left: 30px;
+}
+body .telinha .tabela td{
+    padding: 0 15px;
+}
+body .telinha .tabela .acao a{
+    color:red
+
+}
